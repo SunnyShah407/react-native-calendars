@@ -210,7 +210,7 @@ const CalendarHeader = forwardRef((props: CalendarHeaderProps, ref) => {
           testID={`${testID}.title`}
           {...webProps}
         >
-          {formatNumbers(month?.toString(monthFormat))}
+          {formatNumbers(month?.toLocaleString().toString(monthFormat))}
         </Text>
       </Fragment>
     );

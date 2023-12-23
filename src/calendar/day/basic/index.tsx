@@ -152,7 +152,7 @@ const BasicDay = (props: BasicDayProps) => {
   const renderText = () => {
     return (
       <Text allowFontScaling={false} style={getTextStyle()}>
-        {String(children)}
+        {String(children.toLocaleString())}
       </Text>
     );
   };
